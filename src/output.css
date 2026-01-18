@@ -7,7 +7,16 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-gray-50: oklch(98.5% 0.002 247.839);
+    --spacing: 0.25rem;
+    --container-xl: 36rem;
+    --text-4xl: 2.25rem;
+    --text-4xl--line-height: calc(2.5 / 2.25);
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
     --font-weight-bold: 700;
+    --font-weight-black: 900;
+    --radius-2xl: 1rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -161,11 +170,44 @@
   }
 }
 @layer utilities {
+  .mx-auto {
+    margin-inline: auto;
+  }
+  .flex {
+    display: flex;
+  }
   .grid {
     display: grid;
   }
+  .hidden {
+    display: none;
+  }
   .table {
     display: table;
+  }
+  .max-w-360 {
+    max-width: calc(var(--spacing) * 360);
+  }
+  .max-w-\[1\] {
+    max-width: 1;
+  }
+  .max-w-\[14\] {
+    max-width: 14;
+  }
+  .max-w-\[144\] {
+    max-width: 144;
+  }
+  .max-w-\[1440\] {
+    max-width: 1440;
+  }
+  .max-w-\[1440p\] {
+    max-width: 1440p;
+  }
+  .max-w-\[1440px\] {
+    max-width: 1440px;
+  }
+  .max-w-xl {
+    max-width: var(--container-xl);
   }
   .border-collapse {
     border-collapse: collapse;
@@ -173,28 +215,87 @@
   .resize {
     resize: both;
   }
+  .items-center {
+    align-items: center;
+  }
+  .justify-between {
+    justify-content: space-between;
+  }
+  .gap-8 {
+    gap: calc(var(--spacing) * 8);
+  }
+  .rounded-2xl {
+    border-radius: var(--radius-2xl);
+  }
+  .rounded-full {
+    border-radius: calc(infinity * 1px);
+  }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
-  .font-\[I\] {
-    font-family: I;
+  .border-b {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 1px;
   }
-  .font-\[In\] {
-    font-family: In;
+  .bg-\[\#412567\] {
+    background-color: #412567;
   }
-  .font-\[Int\] {
-    font-family: Int;
+  .bg-\[\#\] {
+    background-color: #;
   }
-  .font-\[Inte\] {
-    font-family: Inte;
+  .bg-\[linear-gradient\(47\.64deg\,\#F7E93F_16\.531\%\,\#FB09B4_49\.819\%\,\#9100F8_81\.648\%\)\] {
+    background-image: linear-gradient(47.64deg,#F7E93F 16.531%,#FB09B4 49.819%,#9100F8 81.648%);
+  }
+  .bg-\[linear-gradient\(47\.64deg\,_\#F7E93F_16\.531\%\,_\#FB09B4_49\.819\%\,_\#9100F8_81\.648\%\)\] {
+    background-image: linear-gradient(47.64deg, #F7E93F 16.531%, #FB09B4 49.819%, #9100F8 81.648%);
+  }
+  .bg-clip-text {
+    background-clip: text;
+  }
+  .px-5 {
+    padding-inline: calc(var(--spacing) * 5);
+  }
+  .py-3 {
+    padding-block: calc(var(--spacing) * 3);
+  }
+  .py-6 {
+    padding-block: calc(var(--spacing) * 6);
+  }
+  .py-8 {
+    padding-block: calc(var(--spacing) * 8);
   }
   .font-\[Inter\] {
     font-family: Inter;
   }
+  .text-4xl {
+    font-size: var(--text-4xl);
+    line-height: var(--tw-leading, var(--text-4xl--line-height));
+  }
+  .font-black {
+    --tw-font-weight: var(--font-weight-black);
+    font-weight: var(--font-weight-black);
+  }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
+  }
+  .font-medium {
+    --tw-font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-medium);
+  }
+  .font-semibold {
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
+  }
+  .text-\[linear-gradient\(47\.64deg\,\#F7E93F_16\.531\%\,\#FB09B4_49\.819\%\,\#9100F8_81\.648\%\)\] {
+    color: linear-gradient(47.64deg,#F7E93F 16.531%,#FB09B4 49.819%,#9100F8 81.648%);
+  }
+  .text-gray-50 {
+    color: var(--color-gray-50);
+  }
+  .text-transparent {
+    color: transparent;
   }
   .underline {
     text-decoration-line: underline;
@@ -202,6 +303,16 @@
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
+  }
+  .lg\:block {
+    @media (width >= 64rem) {
+      display: block;
+    }
+  }
+  .lg\:hidden {
+    @media (width >= 64rem) {
+      display: none;
+    }
   }
 }
 @property --tw-border-style {

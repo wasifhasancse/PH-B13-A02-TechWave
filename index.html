@@ -12,6 +12,11 @@
     href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
     rel="stylesheet">
 
+  <!-- fontawsome icon impor  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <!-- link tailwind css -->
   <link rel="stylesheet" href="./src/output.css">
   <title>PH-B13-A02-TechWave</title>
@@ -19,15 +24,17 @@
 
 <body class="font-[Inter]">
   <!-- header section start -->
-  <header>
+  <header class="bg-[#412567] border-b border-[rgba(65, 37, 103, 1)]">
     <!-- navigation section start  -->
-    <nav>
+    <nav class="max-w-360 mx-auto py-6 px-5 flex items-center justify-between">
       <div>
-        <h1><a href="#">Tech<span>Wave</span></a></h1>
+        <h1 class="text-4xl font-bold text-gray-50"><a href="#">Tech<span
+              class="bg-[linear-gradient(47.64deg,#F7E93F_16.531%,#FB09B4_49.819%,#9100F8_81.648%)] bg-clip-text text-transparent">Wave</span></a>
+        </h1>
       </div>
 
-      <div>
-        <ul>
+      <div class="hidden lg:block">
+        <ul class="flex gap-8 text-gray-50 font-medium">
           <li><a href="#">About</a></li>
           <li><a href="#">Episodes</a></li>
           <li><a href="#">Host</a></li>
@@ -35,7 +42,8 @@
       </div>
 
       <div>
-        <a href="#">Subscribe</a>
+        <a class="lg:hidden" href="#"><img src="./assets/hamburger-menu.png" alt="hamburger-menu"></a>
+        <a class="hidden lg:block py-3 px-5 rounded-full bg-[linear-gradient(47.64deg,#F7E93F_16.531%,#FB09B4_49.819%,#9100F8_81.648%)] text-gray-50 font-semibold" href="#">Subscribe&ensp;<i class="fa-solid fa-arrow-right"></i></a>
       </div>
     </nav>
     <!-- navigation section end -->
