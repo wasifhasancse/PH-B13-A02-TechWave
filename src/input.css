@@ -6,8 +6,13 @@
   background-position: center;
 }
 
+.footer-bg{
+  background: url('../assets/footer-bg.png');
+  background-position: center;
+}
+
 @media screen and (max-width: 576px) {
-  .hero-bg{
+  .hero-bg, .footer-bg{
   background-size: cover;
   background-position: center; 
   background-repeat: no-repeat;
