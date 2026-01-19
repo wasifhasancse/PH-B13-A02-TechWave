@@ -1,3 +1,17 @@
 @import "tailwindcss";
 
+
+.hero-bg{
+  background: url('../assets/hero-bg.png');
+  background-position: center;
+}
+
+@media screen and (max-width: 576px) {
+  .hero-bg{
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
+}
+}
+
 /* npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch */
