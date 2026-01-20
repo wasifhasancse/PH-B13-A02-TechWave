@@ -31,15 +31,15 @@
     <nav class="max-w-300 mx-auto p-5 md:py-6 md:px-3 flex items-center justify-between">
       <div>
         <h1 class="text-4xl font-bold text-gray-50"><a href="#">Tech<span
-              class="bg-[linear-gradient(47.64deg,#F7E93F_16.531%,#FB09B4_49.819%,#9100F8_81.648%)] bg-clip-text text-transparent">Wave</span></a>
+              class="bg-[linear-gradient(47.64deg,#F7E93F_16.531%,#FB09B4_49.819%,#9100F8_81.648%)] bg-clip-text text-transparent hover:bg-size-[200%_auto] ">Wave</span></a>
         </h1>
       </div>
 
       <div class="hidden lg:block">
         <ul class="flex gap-8 text-gray-50 font-medium">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Episodes</a></li>
-          <li><a href="#">Host</a></li>
+          <li><a class="hover:text-purple-400 hover:tracking-wide transition-all duration-500" href="#">About</a></li>
+          <li><a class="hover:text-purple-400 hover:tracking-wide transition-all duration-500" href="#">Episodes</a></li>
+          <li><a class="hover:text-purple-400 hover:tracking-wide transition-all duration-500" href="#">Host</a></li>
         </ul>
       </div>
 
@@ -58,11 +58,13 @@
 
     <!-- hero section start  -->
     <section class="hero-bg bg-center">
-      <div class="lg:max-w-300 px-5 mx-auto py-28 flex flex-col justify-center items-center">
+      <div class="lg:max-w-300 px-5 mx-auto py-10 lg:py-28 flex flex-col justify-center items-center">
 
         <div class="relative flex items-center justify-center group">
           <img class="bg-no-repeat lg:w-87.5 w-50 object-cover" src="./assets/hero-circle.png" alt="hero-circle">
-          <img class="absolute inset-0 m-auto lg:h-50 h-20 group-hover:transform-[rotateY(360deg)] transition-all duration-1000" src="./assets/microphone.png" alt="microphone">
+          <img
+            class="absolute inset-0 m-auto lg:h-50 h-20 group-hover:transform-[rotateY(360deg)] transition-all duration-1000"
+            src="./assets/microphone.png" alt="microphone">
 
           <a class="absolute bg-green-400 shadow-[0px_3px_27px_0px_rgba(0,255,136,0.5)] text-gray-950 py-2 px-4 rounded-full text-lg font-semibold uppercase top-1 right-0 lg:top-3 lg:right-5 animate-pulse"
             href="#">New</a>
@@ -73,10 +75,10 @@
           <p class="text-gray-50 mb-6">Your daily dose of tech insights, productivity hacks, and personal growth</p>
 
           <div class="flex gap-2 md:gap-2 lg:gap-5">
-            <a class="py-1 px-2 md:py-3 md:px-5 rounded-full bg-[linear-gradient(47.64deg,#F7E93F_16.531%,#FB09B4_49.819%,#9100F8_81.648%)] text-gray-50 text-sm md:text-lg font-semibold capitalize hover:bg-size-[200%_auto] hover:scale-105 hover:shadow-[0_0_20px_rgba(251,9,180,0.6)] hover:bg-right transition-all duration-500 group"
+            <a class="py-1 px-2 md:py-3 md:px-5 rounded-full bg-[linear-gradient(47.64deg,#F7E93F_16.531%,#FB09B4_49.819%,#9100F8_81.648%)] text-gray-50 text-sm md:text-lg font-semibold capitalize hover:bg-size-[200%_auto] hover:scale-105 hover:shadow-[0_0_20px_rgba(251,9,180,0.6)] hover:bg-right transition-all duration-500 group animate-[in-out_2s_ease-in-out_infinite]"
               href="#"><i class="group-hover:animate-bounce fa-brands fa-spotify"></i>&ensp;Listen on Spotify</a>
 
-            <a class="border-2 py-1 px-2 md:py-3 md:px-5 rounded-full border-green-400 text-green-400 text-sm md:text-lg font-semibold group hover:scale-105 hover:shadow-[0_0_20px_rgba(251,9,180,0.6)] transition-all duration-500"
+            <a class="border-2 py-1 px-2 md:py-3 md:px-5 rounded-full border-green-400 text-green-400 text-sm md:text-lg font-semibold group hover:scale-105 hover:shadow-[0_0_20px_rgba(251,9,180,0.6)] hover:border-purple-400 hover:text-purple-400 transition-all duration-500 animate-[in-out_2s_ease-in-out_infinite]"
               href="#"><i class="group-hover:animate-bounce fa-regular fa-envelope"></i>&ensp;Subscribe</a>
           </div>
         </div>
@@ -99,36 +101,45 @@
           </p>
         </div>
 
-        <hr class="h-0.5 w-full bg-[#412567] opacity-50 my-20">
+        <hr class="h-0.5 w-full bg-[#412567] opacity-50 my-10 lg:my-20">
 
         <div class="grid grid-cols-2 gap-10 md:gap-12 md:grid-cols-3 lg:grid-cols-4">
 
           <!-- card start  -->
           <div class="text-center md:px-3 group">
-            <h3 class="text-4xl font-black text-green-400 uppercase group-hover:animate-bounce">150K+</h3>
-            <p class="text-gray-300 uppercase mt-4 group-hover:font-semibold group-hover:scale-105 transition-all duration-300">Monthly Listeners</p>
+            <h3 class="text-4xl font-black text-green-400 uppercase group-hover:text-purple-400 group-hover:animate-bounce">150K+</h3>
+            <p
+              class="text-gray-300 uppercase mt-4 group-hover:font-semibold group-hover:scale-105 transition-all duration-300">
+              Monthly Listeners</p>
           </div>
           <!-- card end -->
 
 
           <!-- card start  -->
           <div class="text-center md:px-3 group">
-            <h3 class="text-4xl font-black text-green-400 uppercase group-hover:animate-bounce">200K+</h3>
-            <p class="text-gray-300 uppercase mt-4 group-hover:font-semibold group-hover:scale-105 transition-all duration-300">Episodes Published</p>
+            <h3 class="text-4xl font-black text-green-400 uppercase group-hover:text-purple-400 group-hover:animate-bounce">200K+</h3>
+            <p
+              class="text-gray-300 uppercase mt-4 group-hover:font-semibold group-hover:scale-105 transition-all duration-300">
+              Episodes Published</p>
           </div>
           <!-- card end -->
 
           <!-- card start  -->
           <div class="text-center md:px-3 group">
-            <h3 class="text-4xl font-black text-green-400 uppercase group-hover:animate-bounce">4.9<i class="text-3xl fa-solid fa-star"></i></h3>
-            <p class="text-gray-300 uppercase mt-4 group-hover:font-semibold group-hover:scale-105 transition-all duration-300">Average Rating</p>
+            <h3 class="text-4xl font-black text-green-400 uppercase group-hover:text-purple-400 group-hover:animate-bounce">4.9<i
+                class="text-3xl fa-solid fa-star"></i></h3>
+            <p
+              class="text-gray-300 uppercase mt-4 group-hover:font-semibold group-hover:scale-105 transition-all duration-300">
+              Average Rating</p>
           </div>
           <!-- card end -->
 
           <!-- card start  -->
           <div class="text-center md:px-3 group">
-            <h3 class="text-4xl font-black text-green-400 uppercase group-hover:animate-bounce">50+</h3>
-            <p class="text-gray-300 uppercase mt-4 group-hover:font-semibold group-hover:scale-105 transition-all duration-300">Industry Experts</p>
+            <h3 class="text-4xl font-black text-green-400 uppercase group-hover:text-purple-400 group-hover:animate-bounce">50+</h3>
+            <p
+              class="text-gray-300 uppercase mt-4 group-hover:font-semibold group-hover:scale-105 transition-all duration-300">
+              Industry Experts</p>
           </div>
           <!-- card end -->
 
@@ -148,8 +159,10 @@
         <div class="mt-7 lg:mt-10 grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8">
 
           <!-- card start  -->
-          <div class="bg-[#351165] rounded-4xl p-6 lg:p-10 lg:row-span-2 flex flex-col justify-center group hover:scale-105 hover:shadow-[0_0_15px_rgba(251,9,180,0.6)] transition-all duration-500">
-            <div><img class="group-hover:rotate-360 transition-all duration-500" src="./assets/headphone.png" alt="headphone"></div>
+          <div
+            class="bg-[#351165] rounded-4xl p-6 lg:p-10 lg:row-span-2 flex flex-col justify-center group hover:scale-105 outline hover:outline-purple-400 hover:shadow-[0_0_10px_rgba(251,9,180,0.6)] transition-all duration-500">
+            <div><img class="group-hover:rotate-360 transition-all duration-500" src="./assets/headphone.png"
+                alt="headphone"></div>
             <h3 class="text-2xl font-bold text-gray-50 capitalize my-4">Premium Audio Quality</h3>
             <p class="text-gray-400 leading-6">Experience crystal-clear sound with professional-grade recording
               equipment and expert audio engineering.
@@ -159,8 +172,10 @@
           <!-- card end -->
 
           <!-- card start  -->
-          <div class="bg-[#351165] rounded-4xl p-6 lg:p-10 lg:col-span-2 flex flex-col justify-center group hover:scale-105 hover:shadow-[0_0_15px_rgba(251,9,180,0.6)] transition-all duration-500">
-            <div><img class="group-hover:rotate-360 transition-all duration-500" src="./assets/device.png" alt="device"></div>
+          <div
+            class="bg-[#351165] rounded-4xl p-6 lg:p-10 lg:col-span-2 flex flex-col justify-center group hover:scale-105 outline hover:outline-purple-400 hover:shadow-[0_0_10px_rgba(251,9,180,0.6)] transition-all duration-500">
+            <div><img class="group-hover:rotate-360 transition-all duration-500" src="./assets/device.png" alt="device">
+            </div>
             <h3 class="text-2xl font-bold text-gray-50 capitalize my-4">Mobile Friendly</h3>
             <p class="text-gray-400 leading-6">Listen on the go with seamless mobile experience and offline downloads.
             </p>
@@ -168,16 +183,20 @@
           <!-- card end -->
 
           <!-- card start  -->
-          <div class="bg-[#351165] rounded-4xl p-6 lg:p-10 lg:col-span-2 flex flex-col justify-center group hover:scale-105 hover:shadow-[0_0_15px_rgba(251,9,180,0.6)] transition-all duration-500">
-            <div><img class="group-hover:rotate-360 transition-all duration-500" src="./assets/location.png" alt="location"></div>
+          <div
+            class="bg-[#351165] rounded-4xl p-6 lg:p-10 lg:col-span-2 flex flex-col justify-center group hover:scale-105 outline hover:outline-purple-400 hover:shadow-[0_0_10px_rgba(251,9,180,0.6)] transition-all duration-500">
+            <div><img class="group-hover:rotate-360 transition-all duration-500" src="./assets/location.png"
+                alt="location"></div>
             <h3 class="text-2xl font-bold text-gray-50 capitalize my-4">Global Community</h3>
             <p class="text-gray-400 leading-6">Connect with tech enthusiasts from over 120 countries worldwide.</p>
           </div>
           <!-- card end -->
 
           <!-- card start  -->
-          <div class="bg-[#351165] rounded-4xl p-6 lg:p-10 lg:col-span-2 flex flex-col justify-center group hover:scale-105 hover:shadow-[0_0_15px_rgba(251,9,180,0.6)] transition-all duration-500">
-            <div><img class="group-hover:rotate-360 transition-all duration-500" src="./assets/energy.png" alt="energy"></div>
+          <div
+            class="bg-[#351165] rounded-4xl p-6 lg:p-10 lg:col-span-2 flex flex-col justify-center group hover:scale-105 outline hover:outline-purple-400 hover:shadow-[0_0_10px_rgba(251,9,180,0.6)] transition-all duration-500">
+            <div><img class="group-hover:rotate-360 transition-all duration-500" src="./assets/energy.png" alt="energy">
+            </div>
             <h3 class="text-2xl font-bold text-gray-50 capitalize my-4">Exclusive Interviews</h3>
             <p class="text-gray-400 leading-6">Get unprecedented access to industry titans, startup founders, and tech
               visionaries. Our host secures
@@ -188,8 +207,10 @@
           <!-- card end -->
 
           <!-- card start  -->
-          <div class="bg-[#351165] rounded-4xl p-6 lg:p-10 flex flex-col justify-center group hover:scale-105 hover:shadow-[0_0_15px_rgba(251,9,180,0.6)] transition-all duration-500">
-            <div><img class="group-hover:transform-[rotateY(360deg)] transition-all duration-500" src="./assets/resource.png" alt="resource"></div>
+          <div
+            class="bg-[#351165] rounded-4xl p-6 lg:p-10 flex flex-col justify-center group hover:scale-105 outline hover:outline-purple-400 hover:shadow-[0_0_10px_rgba(251,9,180,0.6)] transition-all duration-500">
+            <div><img class="group-hover:transform-[rotateY(360deg)] transition-all duration-500"
+                src="./assets/resource.png" alt="resource"></div>
             <h3 class="text-2xl font-bold text-gray-50 capitalize my-4">Rich Resources</h3>
             <p class="text-gray-400 leading-6">Access show notes, transcripts, and additional learning materials for
               every episode.</p>
@@ -214,10 +235,10 @@
         <div class="grid grid-cols-1 gap-4 mt-6 lg:grid-cols-3 lg:gap-8 lg:mt-10">
 
           <!-- card start -->
-          <div class="bg-[#351165] rounded-3xl overflow-hidden shadow-lg">
+          <div class="bg-[#351165] outline rounded-3xl overflow-hidden shadow-lg hover:outline-purple-400 hover:shadow-[0_0_10px_rgba(251,9,180,0.6)] transition-all duration-500">
 
             <!-- iframe start -->
-            <div class="relative h-62.5 w-full">
+            <div class="relative aspect-video overflow-hidden w-full">
 
               <iframe class="w-full h-full" src="https://www.youtube.com/embed/6okddtpBcTE?si=F9JpVbUSr4puvjIn"
                 title="YouTube video player" frameborder="0"
@@ -257,10 +278,10 @@
           <!-- card end -->
 
           <!-- card start -->
-          <div class="bg-[#351165] rounded-3xl overflow-hidden shadow-lg">
+          <div class="bg-[#351165] rounded-3xl overflow-hidden shadow-lg outline hover:outline-purple-400 hover:shadow-[0_0_10px_rgba(251,9,180,0.6)] transition-all duration-500">
 
             <!-- iframe start -->
-            <div class="relative h-62.5 w-full">
+            <div class="relative aspect-video overflow-hidden w-full">
 
               <iframe class="w-full h-full" src="https://www.youtube.com/embed/O3ADW22OrHk?si=RnjTVaWDjrlJT_iG"
                 title="YouTube video player" frameborder="0"
@@ -300,10 +321,10 @@
           <!-- card end -->
 
           <!-- card start -->
-          <div class="bg-[#351165] rounded-3xl overflow-hidden shadow-lg">
+          <div class="bg-[#351165] rounded-3xl overflow-hidden shadow-lg outline hover:outline-purple-400 hover:shadow-[0_0_10px_rgba(251,9,180,0.6)] transition-all duration-500">
 
             <!-- iframe start -->
-            <div class="relative h-62.5 w-full">
+            <div class="relative aspect-video overflow-hidden w-full">
 
               <iframe class="w-full h-full" src="https://www.youtube.com/embed/diVum8E7FOg?si=Su-Sa50YL7Q4Rinc"
                 title="YouTube video player" frameborder="0"
@@ -358,9 +379,9 @@
 
         <!-- host card start -->
         <div
-          class="bg-[#351165] p-6 lg:p-10 mt-10 flex flex-col lg:flex-row items-center justify-center gap-6 rounded-4xl">
+          class="bg-[#351165] p-6 lg:p-10 mt-10 flex flex-col lg:flex-row items-center justify-center gap-6 rounded-4xl outline hover:outline-purple-400 hover:shadow-[0_0_10px_rgba(251,9,180,0.6)] transition-all duration-500 group">
 
-          <img src="./assets/host.png" alt="Host">
+          <img class="group-hover:outline-purple-300 group-hover:outline-offset-1 outline rounded-full group-hover:scale-[1.05] group-hover:shadow-[0_0_10px_rgba(255,255,255,0.6)] transition-all duration-500" src="./assets/host.png" alt="Host">
 
           <div class="flex flex-col text-center lg:text-left justify-center gap-2">
             <h3 class="text-2xl font-bold text-gray-50 capitalize mb-3">
@@ -425,7 +446,7 @@
 
       </div>
       <!-- social link end -->
-      <div class=" text-gray-400 font-medium leading-5">
+      <div class=" text-gray-400 font-medium text-center leading-5">
         <p>&copy;&ensp;2026 TechWave Podcast. All rights reserved.</p>
       </div>
     </section>

@@ -11,9 +11,13 @@
   background-position: center;
 }
 
+@keyframes in-out {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
 @media screen and (max-width: 576px) {
   .hero-bg, .footer-bg{
-  background-size: cover;
   background-position: center; 
   background-repeat: no-repeat;
 }
