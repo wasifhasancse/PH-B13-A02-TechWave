@@ -16,11 +16,10 @@
     50% { transform: scale(1.05); }
 }
 
-@media screen and (max-width: 576px) {
-  .hero-bg, .footer-bg{
-  background-position: center; 
-  background-repeat: no-repeat;
-}
+@keyframes spin {
+   to {
+    transform: rotate(360deg);
+  }
 }
 
 /* npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch */
